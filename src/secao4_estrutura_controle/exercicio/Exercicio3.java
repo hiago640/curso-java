@@ -1,5 +1,7 @@
 package secao4_estrutura_controle.exercicio;
 
+import java.util.Scanner;
+
 public class Exercicio3 {
 
 	/**
@@ -11,6 +13,22 @@ public class Exercicio3 {
 
 	public static void main(String[] args) {
 
+		Scanner entrada = new Scanner(System.in);
+		
+		double n1 = entrada.nextDouble();
+		double n2 = entrada.nextDouble();
+		
+		double media = n1 + n2;
+		
+		if(media >= 7.0)
+			System.out.println("Aprovado.");
+		else if (media >= 4.0)
+			System.out.println("Recuperação.");
+		else 
+			System.out.println("Reprovado.");
+		
+
+		entrada.close();
 	}
 
 }

@@ -1,5 +1,7 @@
 package secao4_estrutura_controle.exercicio;
 
+import java.util.Scanner;
+
 public class Exercicio7 {
 
 	/**
@@ -9,8 +11,24 @@ public class Exercicio7 {
 	 */
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		int numero = 0;
+		int somatoria = 0;
+		do {
+			System.out.print("Digite um número.\nPara sair, insira um número negativo: ");
+			numero = entrada.nextInt();
+			
+			somatoria += numero;
+			
+			System.out.println("A somatória dos números positivos inseridos é: " + somatoria);
+			
+		} while (numero >= 0);
+			
+		System.out.println("\nFinalizando...");
 
+		entrada.close();
 	}
 
 }
