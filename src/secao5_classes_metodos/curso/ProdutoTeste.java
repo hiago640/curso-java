@@ -4,12 +4,13 @@ public class ProdutoTeste {
 
 	public static void main(String[] args) {
 
-		Produto p1 = new Produto("Notebook", 4000, 0.25);
+		Produto p1 = new Produto("Notebook", 4000);
 		
 		Produto p2 = new Produto();
 		p2.nome = "Celular";
 		p2.preco = 1500;
-		p2.desconto = 0.25;
+
+		Produto.desconto = 0.29;
 		
 		System.out.println(p1.nome);
 		System.out.println(p1.preco);
