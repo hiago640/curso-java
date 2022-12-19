@@ -10,22 +10,15 @@ public class Exercicio10 {
 	 * o menor número ( nesta sequência ).
 	 */
 	public static void main(String[] args) {
-		
 		Scanner entrada = new Scanner(System.in);
-		
-		int numero = 0;
-		int somatoria = 0;
-		do {
-			System.out.print("Digite um número.\nPara sair, insira um número negativo: ");
-			numero = entrada.nextInt();
-			
-			somatoria += numero;
-			
-			System.out.println("A somatória dos números positivos inseridos é: " + somatoria);
-			
-		} while (numero >= 0);
-			
-		System.out.println("\nFinalizando...");
+
+		System.out.println("Digite o primeiro numero: ");
+		int numA = entrada.nextInt();
+
+		System.out.println("Digite o segundo numero: ");
+		int numB = entrada.nextInt();
+
+		ComparaNumero.comparar(numA, numB);
 
 		entrada.close();
 	}

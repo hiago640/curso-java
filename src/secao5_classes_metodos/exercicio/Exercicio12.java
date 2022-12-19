@@ -1,7 +1,5 @@
 package secao5_classes_metodos.exercicio;
 
-import java.util.Scanner;
-
 public class Exercicio12 {
 
 	/**
@@ -12,15 +10,10 @@ public class Exercicio12 {
 	 * informações do Carro.
 	 */
 	public static void main(String[] args) {
-		Scanner entrada = new Scanner(System.in);
 
-		System.out.print("Insira uma palavra: ");
-		String palavra = entrada.nextLine();
-		
-		for(char c : palavra.toCharArray())
-			System.out.println(c);
+		Carro carro = new Carro("Volkswagen", "Connect", 2022);
 
-		entrada.close();
+		carro.apresentar();
 	}
 
 }
