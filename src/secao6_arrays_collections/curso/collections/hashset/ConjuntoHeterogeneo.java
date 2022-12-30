@@ -3,7 +3,7 @@ package secao6_arrays_collections.curso.collections.hashset;
 import java.util.HashSet;
 import java.util.Set;
 
-public class ConjuntoBaguncado {
+public class ConjuntoHeterogeneo {
 
 	public static void main(String[] args) {
 		
@@ -15,18 +15,18 @@ public class ConjuntoBaguncado {
 		conjunto.add(1);
 		conjunto.add('x');
 		
-		System.out.println("Tamanho é " + conjunto.size());
+		System.out.println("Tamanho ï¿½ " + conjunto.size());
 		
 		conjunto.add('x');
 		conjunto.add("Teste");
 		
-		System.out.println("Tamanho é " + conjunto.size());
+		System.out.println("Tamanho ï¿½ " + conjunto.size());
 		
 		System.out.println(conjunto.remove("teste"));
 		System.out.println(conjunto.remove("Teste"));
 		System.out.println(conjunto.remove('x'));
 		
-		System.out.println("Tamanho é " + conjunto.size());
+		System.out.println("Tamanho ï¿½ " + conjunto.size());
 		
 		System.out.println(conjunto.contains("teste"));
 		System.out.println(conjunto.contains("Teste"));
@@ -40,11 +40,11 @@ public class ConjuntoBaguncado {
 		System.out.println(nums);
 		System.out.println(conjunto);
 		
-		//união entre dois conjuntos
+		//uniï¿½o entre dois conjuntos
 		conjunto.addAll(nums);
 		System.out.println(conjunto);
 		
-		//intercessão entre dois conjuntos
+		//intercessï¿½o entre dois conjuntos
 		conjunto.retainAll(nums);
 		System.out.println(conjunto);
 	}
