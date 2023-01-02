@@ -1,4 +1,4 @@
-package secao6_arrays_collections.curso.collections.deque;
+package secao6_arrays_collections.curso.collections;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -35,8 +35,9 @@ public class Pilha {
 		// .poll() retorna null caso a Pilha esteja vazia.
 		System.out.println(livros.pop());
 		System.out.println(livros.poll());
+		System.out.println(livros.remove());
 		System.out.println(livros.poll());
-		System.out.println(livros.poll());
+		
 	}
 
 }

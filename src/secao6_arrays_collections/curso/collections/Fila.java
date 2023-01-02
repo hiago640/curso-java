@@ -1,4 +1,4 @@
-package secao6_arrays_collections.curso.collections.queue;
+package secao6_arrays_collections.curso.collections;
 
 import java.util.LinkedList;
 import java.util.Queue;

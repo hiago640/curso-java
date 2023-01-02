@@ -10,7 +10,7 @@ public class Usuario {
 	public Usuario() {
 
 	}
-	
+
 	public Usuario(String nome) {
 		this.nome = nome;
 	}
@@ -34,5 +34,5 @@ public class Usuario {
 	public String toString() {
 		return "Meu nome é " + this.nome + ".";
 	}
-	
+
 }

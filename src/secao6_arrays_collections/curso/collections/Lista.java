@@ -1,4 +1,4 @@
-package secao6_arrays_collections.curso.collections.hashset;
+package secao6_arrays_collections.curso.collections;
 
 import java.util.ArrayList;
 
