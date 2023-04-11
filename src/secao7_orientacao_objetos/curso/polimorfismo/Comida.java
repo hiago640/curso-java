@@ -1,6 +1,6 @@
 package secao7_orientacao_objetos.curso.polimorfismo;
 
-public class Comida {
+public abstract class Comida {
 
 	private double peso;
 
