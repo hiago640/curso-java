@@ -1,5 +1,7 @@
 package secao9_streams;
 
+import java.util.Objects;
+
 public class Aluno {
 
     String nome;
@@ -14,6 +16,31 @@ public class Aluno {
         this.nome = nome;
         this.nota = nota;
         this.bomComportamento = bomComportamento;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Aluno)) {
+            return false;
+        }
+        Aluno aluno = (Aluno) o;
+        return Objects.equals(nome, aluno.nome) && nota == aluno.nota && bomComportamento == aluno.bomComportamento;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, nota, bomComportamento);
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                " nome='" + nome + "'" +
+                ", nota='" + nota + "'" +
+                ", bomComportamento='" + bomComportamento + "'" +
+                "}";
     }
 
 }
