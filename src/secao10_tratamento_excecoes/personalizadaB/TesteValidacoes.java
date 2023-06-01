@@ -10,7 +10,7 @@ public class TesteValidacoes {
 
         try {
             Validar.aluno(aluno);
-        } catch (StringVaziaException e) {
+        } catch (StringVaziaException | NumeroForaIntervaloException e) {
             System.out.println(e.getMessage());
         }
 
