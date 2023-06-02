@@ -1,6 +1,6 @@
 package secao10_tratamento_excecoes.personalizadaB;
 
-import secao9_streams.Aluno;
+import secao09_streams.Aluno;
 
 public class Validar {
 
