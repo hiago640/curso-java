@@ -1,4 +1,4 @@
-package secao13_swing.observer;
+package secao13_swing.observer.exemplo01;
 
 import java.util.Date;
 
